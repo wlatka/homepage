@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wojciech Łatka - informacje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body class="containerBody">
+    <header class="header">
+        <h1 class="header__title">Moja pierwsza strona z YOUCODE</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__ll">
+                <a class="nav__li--menu" href="#o-mnie">O mnie</a>
+            </li>
+            <li class="nav__lI">
+                <a class="nav__li--menu" href="#karawaning">Karawaning</a>
+            </li>
+            <li class="nav__lI">
+                <a class="nav__li--menu" href="#kamper">Wymarzony Kamper</a>
+            </li>
+            <li class="nav__lI">
+                <a class="nav__li--menu" href="#kontakt">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section">
+            <article class="section__article">
+                <h2>Wojciech Łatka</h2>
+                <img class="section__article--img" width="200" src="./images/wlatka.jpg" alt="Zdjęcie profilowe">
+            </article>
+
+        </section>
+        <section class="section" id="o-mnie">
+            <article class="section__article">
+                <h3 class="section__article--title">O mnie</h3>
+                <p class="section__article--contents">&nbsp;&nbsp;Urodziłem się w małej wsi <span
+                        class="section__article--inlineB">Łącko</span> w
+                    1982r.
+                    Obecnie
+                    mieszkam
+                    w
+                    małej wsi <strong>Jawornik</strong> pod Krakowem. Moją pasją jest karawaning. Całe wakacje spędzam
+                    na polu kempingowym.
+                    Niestety
+                    wakacje są krótkie z braku urlopu, dla tego postanowiłem nauczyć sie programowania, aby móc pracować
+                    zdalnie
+                    w naszej przyczepie :-)</p>
+                <p class="section__article--contents">
+                    W przysłości chciał bym zmienić przyczepę na <span class="section__article--inlineI">kampera</span>
+                    i zwiedzić fajne
+                    miejsca w polsce i za granicą.
+                </p>
+            </article>
+        </section>
+        <section class="section" id="karawaning">
+            <article class="section__article section__article--tableOver">
+                <h3 class="section__article--title">Plan zwiedzania</h3>
+                <p class="section__article--contents">Poniżej w tabeli umieściłem miejsca, które chciałbym odwiedzić
+                    moim kamperem.</p>
+                <table class="section__article--table js_table">
+                    <caption>Plan zwiedzania</caption>
+                    <tr class="section__article--tableRow">
+                        <th class="section__article--tableCell section__article--tableHeader" scope="col">Państwo</th>
+                        <th class="section__article--tableCell section__article--tableHeader" scope="col">Miasto</th>
+                        <th class="section__article--tableCell section__article--tableHeader" scope="col">Rok</th>
+                    </tr>
+                    <tr class="section__article--tableRow">
+                        <th class="section__article--tableCell section__article--tableHeader" scope="row" rowspan="2">
+                            Polska</th>
+                        <td class="section__article--tableCell">Okoniny Nagjeziorne</td>
+                        <td class="section__article--tableCell">06/2021</td>
+                    </tr>
+                    <tr class="section__article--tableRow">
+                        <td class="section__article--tableCell">Okuninka - Jezioro Białe</td>
+                        <td class="section__article--tableCell">07/2021</td>
+                    </tr>
+                    <tr class="section__article--tableRow">
+                        <th class="section__article--tableCell section__article--tableHeader" scope="row">Włochy</th>
+                        <td class="section__article--tableCell">Ancona</td>
+                        <td class="section__article--tableCell">2022</td>
+                    </tr>
+                    <tr class="section__article--tableRow">
+                        <th class="section__article--tableCell section__article--tableHeader" scope="row">Hiszpania</th>
+                        <td class="section__article--tableCell">Majorka</td>
+                        <td class="section__article--tableCell">2023</td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <section class="section" id="kamper">
+            <article class="section__article">
+                <h3 class="section__article--title">Moje marzenie</h3>
+                <p class="section__article--contents">Planuję w przyszłości kupić kampera. Nie dużego, ale na wypasie
+                    :-)</p>
+                <p class="section__article--contents">Chcesz zobaczyć jakiego kampera chcę kupić? Zmień tło na stronie
+                    klikając
+                    przycisk (Zmień tło na ciemny) następnie kliknij (Pokaż nową furę)</p>
+                <button class="section__article--button js_button">Zmień tło na <span
+                        class="js-themeName">ciemny</span></button>
+                <button class="section__article--button js_newCar">Pokaż nową furę</button>
+                <p class="js_camper"></p>
+            </article>
+        </section>
+        <section class="section" id="kontakt">
+            <article class="section__article">
+                <h3 class="section__article--title">Kontakt</h3>
+                <ul class="section__article--kontakt">
+                    <li>
+                        Wojciech Łatka | Junior Developer
+                    </li>
+                    <li>
+                        M: 667 254 213
+                    </li>
+                    <li>
+                        Email: <a class="section__article--email" href="mailto:w.latka@itprotech.pl">w.latka@itprotech.pl</a>
+
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <ul class="footer__navUl">
+            <li class="footer__navLi">
+                Copyright & Design by: <span class="footer__navLi--copyright">Wojciech Łatka</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
