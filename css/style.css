@@ -10,7 +10,12 @@ html {
 
 Body {
     font-family: 'Roboto', sans-serif;
-    background-color: #d8d8d8;
+    background-image: url("../images/background.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-color: #d8d8d8;*/
 }
 
 .containerBodydark {
