@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-.containerBody {
+Body {
     font-family: 'Roboto', sans-serif;
     background-color: #d8d8d8;
 }
