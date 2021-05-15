@@ -1,23 +1,35 @@
-console.log("Hello to all developers!")
+{
+    const welcome = () => {
+        console.log("Hello to all developers!");
+    };
 
-let button = document.querySelector(".js-button");
-let body = document.querySelector(".js-body");
-let table = document.querySelector(".js-table");
-let themeName = document.querySelector(".js-themeName");
-let newCar = document.querySelector(".js-newCar");
-let camper = document.querySelector(".js-camper");
+    welcome();
 
-button.addEventListener("click", () => {
-    body.classList.toggle("containerBodydark");
-    table.remove();
+    const toggleBackgroung = () => {
+        const body = document.documentElement;
+        const themeName = document.querySelector(".js-themeName");
 
-    if (body.classList.contains("containerBodydark")) {
-        themeName.innerText = "jasny";
-    } else {
-        themeName.innerText = "ciemny";
+        body.classList.toggle("containerBodyDark");
+        themeName.innerText = body.classList.contains("containerBodyDark") ? "jasny" : "ciemny";
+    };
+
+    const initBackground = () => {
+        const changeBackgroundButton = document.querySelector(".js-button");
+        changeBackgroundButton.addEventListener("click", toggleBackgroung);
+
+    };
+
+    const showNewCar = () => {
+        const camper = document.querySelector(".js-camper");
+        camper.innerHTML = "<img width='70%' src='images/camper.jpg' alt='Nowy Camper' />";
+
+    };
+
+    const openNewCar = () => {
+        const newCar = document.querySelector(".js-newCar");
+        newCar.addEventListener("click", showNewCar);
     }
-});
 
-newCar.addEventListener("click", () => {
-    camper.innerHTML = "<img width='70%' src='images/camper.jpg' alt='Nowy Camper' />";
-});
+    openNewCar();
+    initBackground();
+};
