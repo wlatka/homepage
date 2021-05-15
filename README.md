@@ -1,9 +1,11 @@
-# Wojciech Łatka - moja strona
+# Wojciech Łatka - my side
 
-![Moje zdjęcie](images/small.jpg)
+![My photo](images/small.jpg)
 
-## Link do strony
+## Link to the page
 
 https://wlatka.github.io/homepage/
 
-## O mnie
+## About me
+> I am an IT specialist and currently I deal with servicing companies. I want to improve my qualifications and that's why I'm taking a frondend course. I wish to become a frontend developer.
+> Caravanning is my hobby.
